@@ -47,19 +47,6 @@ public class VersionManager {
     }
 
     private String parseLatestVersionFromResponse(String responseBody) {
-        // Здесь вам нужно написать код для извлечения версии из ответа GitHub API
-        // Например, если ответ в формате JSON, вы можете использовать библиотеку Gson
-        // для разбора JSON и извлечения версии.
-        // Пример:
-        // Gson gson = new Gson();
-        // JsonObject jsonObject = gson.fromJson(responseBody, JsonObject.class);
-        // return jsonObject.get("tag_name").getAsString();
-        // Это просто пример, и формат ответа GitHub API может измениться,
-        // поэтому вам нужно будет адаптировать код к конкретному формату.
-
-        // Здесь можно использовать библиотеки для работы с JSON, XML или другими форматами
-        // ответов GitHub API, чтобы извлечь версию.
-        // Верните значение версии в формате строки.
         Gson gson = new Gson();
         JsonObject jsonObject = gson.fromJson(responseBody, JsonObject.class);
         return jsonObject.get("tag_name").getAsString();
