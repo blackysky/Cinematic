@@ -1,6 +1,6 @@
-name: CinemaMode
+name: Cinematic
 version: '${project.version}'
-main: de.silke.cinemamode.Main
+main: de.silke.cinematic.Main
 api-version: '1.19'
 authors: [Silke]
 description: Система слежения камеры или кинематографичного режима
